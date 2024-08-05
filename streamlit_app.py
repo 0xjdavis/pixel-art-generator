@@ -15,4 +15,4 @@ if uploaded_file is not None:
     img = img.convert('P', palette=Image.ADAPTIVE, colors=c)
     img=img.resize((g, int(g / h * w)),Image.BILINEAR)
     res=img.resize((640,int(640/ h * w)), Image.NEAREST)
-    st.image(res, caption="It's pixelized!", width=600)
+    st.image(res, caption="It's pixelized!", width=640)

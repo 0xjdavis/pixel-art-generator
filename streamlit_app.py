@@ -2,9 +2,18 @@ import streamlit as st
 from PIL import Image
 import matplotlib.pyplot as plt
 
-st.sidebar.header("About App")
-st.sidebar.write("This is an app to convert rasterized images (jpeg, png) to a pixelized format by 0xjdavis.")
+# Setting page layout
+st.set_page_config(
+    page_title="Generate Pixelized Art",
+    page_icon="✨",
+    layout="centered",
+    initial_sidebar_state="expanded"
+)
 
+# Sidebar for API Key and User Info
+st.sidebar.header("About App")
+st.sidebar.markdown('This is an app to convert rasterized images (jpeg, png) to a pixelized format created by <a href="https://ai.jdavis.xyz" target="_blank">0xjdavis</a>.', unsafe_allow_html=True)
+ 
 # Calendly
 st.sidebar.markdown("""
     <hr />

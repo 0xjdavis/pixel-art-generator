@@ -24,7 +24,7 @@ st.sidebar.caption("©️ Copyright 2024 J. Davis")
 
 
 st.title('Generate Pixelized Art')
-st.subheader('Covert your jpg/png images in to a pixelized version.')
+st.caption('Covert your jpg/png images in to a pixelized version.')
 
 uploaded_file = st.file_uploader("Upload an image.", type=["jpg", "png", "jpeg"])
 if uploaded_file is not None:
